@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection System</title>
+    <style>
+        body {
+            background-color: #343a40; /* Dark background color */
+            color: #fff; /* Text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 20px; /* Add margin below the heading */
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 60px; /* Border radius of 60 */
+            border: 5px solid rgba(255, 255, 255, 0.5); /* White border with 50% opacity */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Face Detection</h1>
+        <img src="{{ url_for('video_feed') }}" width="600" height="500" alt="Face Area Detection" class="center">
+    </div>
+</body>
+</html>
